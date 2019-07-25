@@ -1,6 +1,6 @@
-package lessons.Lesson08;
+package lessons.lesson08_materials;
 
-import lessons.Lesson08.BattleBoard;
+import lessons.lesson08_materials.BattleBoard;
 
 public class Monster {
 	

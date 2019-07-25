@@ -1,4 +1,4 @@
-package lessons.Lesson08;
+package lessons.lesson08_materials;
 
 import java.util.Arrays;
 
@@ -27,11 +27,11 @@ public class BattleBoard {
 	}
 	
 	public static void redrawBoard() {
-		int k = 1;
+		int k = 0;
 		
 		// Draw the top dashed line of the board
 		while (k < 30) {
-			System.out.print('-');
+			System.out.print("-");
 			k++;
 		}
 		
@@ -42,7 +42,7 @@ public class BattleBoard {
 			
 			// Iterate through each cell in the row
 			for (int j = 0; j < battleBoard[i].length; j++) {
-				System.out.print('|' + battleBoard[i][j] + '|');
+				System.out.print("|" + battleBoard[i][j] + "|");
 				
 			}
 			
@@ -51,15 +51,17 @@ public class BattleBoard {
 		}
 		
 		// Draw the bottom dashed line of the board
-		while (k < 30) {
-			System.out.print('-');
-			k++;
+		int m = 0;
+		while (m < 30) {
+			System.out.print("-");
+			m++;
 		}
+		System.out.println();
 	}
 	
 	public BattleBoard() {
-		int maxXBoardSpace = battleBoard.length - 1;
-		int maxYBoardSpace = battleBoard[0].length - 1;
+		maxXBoardSpace = battleBoard.length - 1;
+		maxYBoardSpace = battleBoard[0].length - 1;
 	}
 	
 }
