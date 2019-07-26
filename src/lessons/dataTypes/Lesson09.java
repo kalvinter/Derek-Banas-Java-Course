@@ -1,4 +1,4 @@
-package lessons;
+package lessons.dataTypes;
 
 import java.util.Arrays;
 

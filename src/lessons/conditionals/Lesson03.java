@@ -1,4 +1,4 @@
-package lessons;
+package lessons.conditionals;
 
 public class Lesson03 {
 

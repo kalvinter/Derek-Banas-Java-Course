@@ -1,4 +1,4 @@
-package lessons.lesson08_materials;
+package lessons.oop.lesson_10_materials;
 
 import java.util.Arrays;
 

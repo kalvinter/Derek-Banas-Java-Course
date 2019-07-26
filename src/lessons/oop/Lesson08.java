@@ -1,6 +1,7 @@
-package lessons;
+package lessons.oop;
 
-import lessons.lesson08_materials.*;
+import lessons.oop.lesson_08_materials.BattleBoard;
+import lessons.oop.lesson_08_materials.Monster;
 
 /* Info on how to import java-libraries: http://www.newthinktank.com/2012/01/how-to-install-java-libraries/
 *
@@ -11,8 +12,9 @@ import lessons.lesson08_materials.*;
 * Import Wizard: Select General -> File System
 * Select all jar files from the downloaded library
 * Right click on Project, click on Properties
-* Select "Java Build Path"
-* Select "Libraries", "ModulePath" and click "Add jars"
+* Select "Java Build Path"  -> The Java build path is used while compiling a Java project to discover dependent classes 
+* Select "Libraries" and then "ClassPath" ->  ClassPath is a list of either folders or jar files to consider (in order) when resolving classes to be loaded. 
+* click "Add jars"
 * Select all jars from the "lib" folder and click apply
 * 
 */

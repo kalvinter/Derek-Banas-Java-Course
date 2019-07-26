@@ -1,4 +1,4 @@
-package lessons;  // has to be on the first line!
+package lessons.userInput;  // has to be on the first line!
 
 import java.util.Scanner;
 

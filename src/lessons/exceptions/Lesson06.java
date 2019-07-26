@@ -1,4 +1,4 @@
-package lessons;
+package lessons.exceptions;
 
 /* Most Common Exceptions: 
  *  import java.lang.RuntimeException;  // runtime exception

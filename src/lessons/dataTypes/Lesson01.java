@@ -1,4 +1,4 @@
-package lessons;
+package lessons.dataTypes;
 
 public class Lesson01 {
 

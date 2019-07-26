@@ -1,4 +1,4 @@
-package lessons;
+package lessons.oop;
 
 public class Lesson07 {  // Class name in Lesson is actually Monster
 	
