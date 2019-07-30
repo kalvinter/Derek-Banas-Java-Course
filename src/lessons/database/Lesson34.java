@@ -2,29 +2,42 @@ package lessons.database;
 
 /* TOPIC: Database Connections
  * 
- * NOTE: In Lesson34 MySQL was used. This class, however, uses PostgreSQL
+ * NOTE: In Lesson34 MySQL was used. This class, however, uses PostgreSQL 11
  * 
  * The JDBC Driver for PostgreSQL was downloaded from https://jdbc.postgresql.org/download.html
- * The JDBC Driver is saved in the folder "lib" and added to the build-path -> lib -> Classpath
+ * The JDBC Driver is saved in the folder "lib" and added to the build-path -> lib -> Classpath -> Add JAR's
  * */
 
 import java.sql.*;
 
 public class Lesson34 {
 
-	private static final String url = "jdbc:postgresql://localhost/experiments";
-	private static final String user = "experiments";
-	private static final String password = "experiments";
+	private static final String URL = "jdbc:postgresql://localhost/experiments";
+	private static final String USER = "experiments";
+	private static final String PASSWORD = "experiments";
 	
 	public static void main(String[] args)
 	{
 		Connection conn = null;
 		
 		try {
-			// This just checks if the necessary Driver-Class is available
+			/* Here: Loads the necessary Driver-Class in memory and initializes all 
+			 * static variables. This includes registering at the DriverManager.
+			 * NOTE: This is only required for JDBC with a version < 4.0!
+			 * If the version > 4.0 -> the statement can be omitted!
+			 * 
+			 * Generally: Class.forName(String className) loads a class in memory
+			 * without instantiating it. 
+			 * This is a great method to load a class dynamically. 
+			 * The className can be a String! 
+			 * */
 			Class.forName("org.postgresql.Driver");
 			
-			conn = DriverManager.getConnection(url, user, password);
+			/* DriverManager handles all JDBC drivers 
+			 * Depending on the database defined in the URL (e.g. jdbc:postgresql), 
+			 * the correct driver is used!
+			 * */
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
 			
 			// Statement-Objects are used to execute a String query via an established connection 
 			Statement sqlState = conn.createStatement();
